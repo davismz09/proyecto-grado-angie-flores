@@ -5,19 +5,21 @@ import {imagesFooter, direccion, telefono} from "../assets/footer";
 
 export const Footer = () => (
   <section
+    id='contacts'
     className={`bg-slate-900 ${styles.flexCenter} ${styles.paddingY} px-11 flex-col`}>
     <div
       className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full items-center`}>
-      <div className='flex-1 self-start gap-4'>
-        <div className='flex flex-row justify-self-start mr-10 gap-5 mb-5'>
-          <div className='bg-white rounded-full'>
+      <div className='flex-1 flex flex-col items-center sm:items-start self-start gap-4'>
+        <div className='flex flex-col sm:flex-row justify-self-start gap-5 mb-5'>
+          <div className='bg-white rounded-full self-center'>
             <img
               src={logoeden}
               alt='Logo Eden'
               className='w-[160px] h-[160px] object-contain shadow-white shadow-[0px_2px_43px_4px_rgba(255,255,255,0.75)] rounded-full'
             />
           </div>
-          <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
+          <p
+            className={`${styles.paragraph} mt-4 max-w-[310px] text-center self-center`}>
             "La suavidad de unas sábanas de calidad puede ser el abrazo que
             necesitas después de un largo día".
           </p>
