@@ -4,7 +4,7 @@ export const Button2 = () => {
   return (
     <div className='justify-self-center'>
       <a
-        href='https://www.facebook.com/messages/t/107453921184952'
+        href='https://www.facebook.com/messages/t/sabanaseleden'
         target='_blank'>
         <button className='btn-enlace'>
           <span>Realice su pedido</span>
