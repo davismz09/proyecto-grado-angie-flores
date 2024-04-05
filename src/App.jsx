@@ -1,5 +1,5 @@
 import styles from "./styles.js";
-import {imagenes} from "./components/imagenes.js";
+import {slider} from "./imagenes.json";
 
 import {
   Billing,
@@ -27,7 +27,7 @@ export const App = () => (
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Billing />
-        <Slider images={imagenes} />
+        <Slider images={slider} />
         <Testimonials />
       </div>
     </div>

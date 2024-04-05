@@ -1,6 +1,6 @@
 import {useState} from "react";
-import {close, logoeden, menu} from "../assets";
 import {navLinks} from "../constants";
+import {principales, svg} from "../imagenes.json";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,7 +11,7 @@ export const Navbar = () => {
         href='https://www.facebook.com/sabanaseleden'
         target='_blank'>
         <img
-          src={logoeden}
+          src={principales.logo}
           alt='hookbank'
           className='w-[160px] h-[160px] object-contain shadow-white shadow-[0px_2px_43px_4px_rgba(255,255,255,0.75)] rounded-full'
         />
@@ -30,7 +30,7 @@ export const Navbar = () => {
 
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img
-          src={toggle ? close : menu}
+          src={toggle ? svg.close : svg.open}
           alt='menu'
           className='w-[28px] h-[28px] object-contain justify-self-start'
           onClick={() => setToggle((prev) => !prev)}

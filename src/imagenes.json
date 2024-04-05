@@ -1,0 +1,62 @@
+{
+  "svg": {
+    "close": "close.svg",
+    "open": "menu.svg",
+    "quotes": "quotes.svg"
+  },
+  "principales": {
+    "efectivo": "principales/efectivo.webp",
+    "tarjeta": "principales/tarjeta.webp",
+    "user": "principales/icon-user-mujer.webp",
+    "logo": "principales/logo-eden.webp"
+  },
+  "slider": [
+    "sabanas/sabana-1.webp",
+    "sabanas/sabana-2.webp",
+    "sabanas/sabana-3.webp",
+    "sabanas/sabana-4.webp",
+    "sabanas/sabana-5.webp",
+    "sabanas/sabana-6.webp"
+  ],
+  "hero": {
+    "sabana": "sabanas/sabana-principal.webp"
+  },
+  "footer": {
+    "facebook": "footer/icon-facebook.webp",
+    "direccion": "footer/icon-direccion.webp",
+    "telefono": "footer/icon-telefono.webp",
+    "galeria": [
+      {
+        "image": "footer/img-footer-1.webp",
+        "title": "Imagen 1",
+        "id": "1"
+      },
+      {
+        "image": "footer/img-footer-2.webp",
+        "title": "Imagen 2",
+        "id": "2"
+      },
+
+      {
+        "image": "footer/img-footer-3.webp",
+        "title": "Imagen 3",
+        "id": "3"
+      },
+      {
+        "image": "footer/img-footer-4.webp",
+        "title": "Imagen 4",
+        "id": "4"
+      },
+      {
+        "image": "footer/img-footer-5.webp",
+        "title": "Imagen 5",
+        "id": "5"
+      },
+      {
+        "image": "footer/img-footer-6.webp",
+        "title": "Imagen 6",
+        "id": "6"
+      }
+    ]
+  }
+}

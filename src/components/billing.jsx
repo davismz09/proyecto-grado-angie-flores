@@ -1,4 +1,4 @@
-import {tarjeta, efectivo} from "../assets";
+import {principales} from "../imagenes.json";
 import styles, {layout} from "../styles";
 import {Button} from "./button";
 
@@ -7,12 +7,12 @@ export const Billing = () => (
     <div className={layout.sectionImgReverse}>
       <div className='grid justify-center items-center'>
         <img
-          src={tarjeta}
+          src={principales.tarjeta}
           alt='Tarjeta'
           className='w-[320px] h-[180px] relative z-[5]'
         />
         <img
-          src={efectivo}
+          src={principales.efectivo}
           alt='efectivo'
           className='w-[424px] h-[212px] relative bottom-32 left-20'
         />

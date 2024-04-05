@@ -1,6 +1,5 @@
 import styles from "../styles";
-import {logoeden, facebook} from "../assets";
-import {imagesFooter, direccion, telefono} from "../assets/footer";
+import {footer, principales} from "../imagenes.json";
 
 export const Footer = () => (
   <section
@@ -12,7 +11,7 @@ export const Footer = () => (
         <div className='flex flex-col sm:flex-row justify-self-start gap-5 mb-5'>
           <div className='bg-white rounded-full self-center'>
             <img
-              src={logoeden}
+              src={principales.logo}
               alt='Logo Eden'
               className='w-[160px] h-[160px] object-contain shadow-white shadow-[0px_2px_43px_4px_rgba(255,255,255,0.75)] rounded-full'
             />
@@ -24,18 +23,18 @@ export const Footer = () => (
           </p>
         </div>
         <p className={`text-slate-400 flex items-center gap-2 mb-3`}>
-          <img src={direccion} alt='Dirección' className='w-[30px]' />
+          <img src={footer.direccion} alt='Dirección' className='w-[30px]' />
           Guayaquil - Ecuador
         </p>
         <p className={`text-slate-400 flex items-center gap-2`}>
-          <img src={telefono} alt='telefono' className='w-[30px]' />
+          <img src={footer.telefono} alt='telefono' className='w-[30px]' />
           +593 96 919 0679
         </p>
       </div>
       <div>
         <h2 className={`text-slate-400`}>Facebook</h2>
         <div className='flex-[1.5] w-full grid grid-cols-3 gap-4 md:mt-0 mt-10 mb-10'>
-          {imagesFooter.map(({image, title, id}) => (
+          {footer.galeria.map(({image, title, id}) => (
             <img
               key={id}
               src={image}
@@ -49,7 +48,7 @@ export const Footer = () => (
             href='https://www.facebook.com/sabanaseleden'
             target='_blank'
             className='flex gap-4'>
-            <img src={facebook} alt='Facebook' />
+            <img src={footer.facebook} alt='Facebook' />
             <p className={`text-slate-400`}>
               Siguenos en Sábanas &quot;El Edén&quot;
             </p>

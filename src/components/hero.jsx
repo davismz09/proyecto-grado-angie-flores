@@ -1,5 +1,5 @@
 import styles from "../styles";
-import {sabana} from "../assets";
+import {hero} from "../imagenes.json";
 
 export const Hero = () => (
   <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -38,7 +38,7 @@ export const Hero = () => (
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <img
-        src={sabana}
+        src={hero.sabana}
         alt='billing'
         className='w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] relative z-[5] rounded-full shadow-xl transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer'
       />
