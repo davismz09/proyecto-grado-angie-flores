@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {close, logoeden, menu} from "../assets";
 import {navLinks} from "../constants";
 
@@ -6,20 +6,23 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <a href='https://www.facebook.com/sabanaseleden' target='_blank'>
+      <a
+        className='w-max bg-white rounded-full p-2 hover:cursor-pointer'
+        href='https://www.facebook.com/sabanaseleden'
+        target='_blank'>
         <img
           src={logoeden}
           alt='hookbank'
-          className='w-[120px] h-[120px] hover:cursor-pointer'
+          className='w-[160px] h-[160px] object-contain shadow-white shadow-[0px_2px_43px_4px_rgba(255,255,255,0.75)] rounded-full'
         />
       </a>
       <ul className='list-none sm:flex  hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins cursor-pointer text-[20px] hover:text-gray-200 font-bold ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
-            } text-slate-900 font-bold`}>
+            } text-gray-300 font-bold`}>
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}

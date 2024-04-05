@@ -5,7 +5,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
 import facebook from "./facebook.svg";
-import logoeden from "./logoeden.png";
+import logoeden from "./logo-eden.png";
 import tarjeta from "./tarjeta.png";
 import efectivo from "./efectivo.png";
 import userMujer from "./user-mujer.png";

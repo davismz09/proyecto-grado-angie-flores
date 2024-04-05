@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "../style";
+import styles from "../styles";
 import {logoeden, facebook} from "../assets";
 import {imagesFooter, direccion, telefono} from "../assets/footer";
 
@@ -19,22 +18,22 @@ export const Footer = () => (
             />
           </div>
           <p
-            className={`${styles.paragraph} mt-4 max-w-[310px] text-center self-center`}>
-            "La suavidad de unas sábanas de calidad puede ser el abrazo que
-            necesitas después de un largo día".
+            className={`text-slate-400 mt-4 max-w-[310px] text-center self-center`}>
+            &quot;La suavidad de unas sábanas de calidad puede ser el abrazo que
+            necesitas después de un largo día&quot;.
           </p>
         </div>
-        <p className={`${styles.paragraph} flex items-center gap-2 mb-3`}>
+        <p className={`text-slate-400 flex items-center gap-2 mb-3`}>
           <img src={direccion} alt='Dirección' className='w-[30px]' />
           Guayaquil - Ecuador
         </p>
-        <p className={`${styles.paragraph} flex items-center gap-2`}>
+        <p className={`text-slate-400 flex items-center gap-2`}>
           <img src={telefono} alt='telefono' className='w-[30px]' />
           +593 96 919 0679
         </p>
       </div>
       <div>
-        <h2 className={`${styles.paragraph}`}>Facebook</h2>
+        <h2 className={`text-slate-400`}>Facebook</h2>
         <div className='flex-[1.5] w-full grid grid-cols-3 gap-4 md:mt-0 mt-10 mb-10'>
           {imagesFooter.map(({image, title, id}) => (
             <img
@@ -51,8 +50,8 @@ export const Footer = () => (
             target='_blank'
             className='flex gap-4'>
             <img src={facebook} alt='Facebook' />
-            <p className={`${styles.paragraph}`}>
-              Siguenos en Sábanas "El Edén"
+            <p className={`text-slate-400`}>
+              Siguenos en Sábanas &quot;El Edén&quot;
             </p>
           </a>
         </div>
@@ -61,7 +60,7 @@ export const Footer = () => (
 
     <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
       <p
-        className={`${styles.paragraph} w-[100%] font-popping font-normal text-center text-[18px] leading-[72px] text-white`}>
+        className={`text-white w-[100%] font-popping font-normal text-center text-[18px] leading-[72px]`}>
         2023 Sábanas El Edén. All Rights Reserved.
       </p>
     </div>

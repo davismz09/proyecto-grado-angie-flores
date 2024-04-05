@@ -1,6 +1,5 @@
-import React from "react";
-import "./button2.css";
-export const Button2 = () => {
+import "./estilos/button.css";
+export const Button = () => {
   return (
     <div className='justify-self-center'>
       <a
